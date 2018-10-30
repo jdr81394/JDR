@@ -1,0 +1,116 @@
+<html>
+
+<head>
+<link href = "learned.css" rel = "stylesheet" type ="text/css">
+<script src = 'learned.js'></script>
+</head>
+<body>
+
+<nav id = 'nav-bar'>
+  <aside>
+  <div>
+    <a id ='mysitelink' href = "#">My Site</a>
+  </div>
+</aside>
+</nav>
+
+<div id = 'link-container'>
+  Navigation
+  <ul>
+    <li>
+      <a href = '#'> Link 1 </a>
+    </li>
+    <li>
+      <a href='#'> Link 2 </a>
+    </li>
+    <li>
+      <a href='#'>Link 3 </a>
+    </li>
+    <li>
+      <a href ='#'>Link 4 </a>
+    </li>
+    <li>
+      <a href = '#'>Link 5 </a>
+    </li>
+  </ul>
+  <button type = 'button' onclick = "openModal();"> Click me! </button>
+</div>
+
+<div id = 'modal' style = 'display: none'>
+  <div id ='modal-header'>
+    <h1> All the functions I have learned from Kalob </h1>
+      </div>
+    <div id = 'modal-content'>
+
+      <div id = 'calculator'>
+        <h2> Calculator</h2>
+<input id = 'inputone' type = 'number'> </input>
+<select>
+  <option value = 'addition'> Plus </option>
+  <option value = 'subtraction'> Minus </option>
+  <option value = 'multiply'> Multiply </option>
+  <option value = 'divide'> Divide </option>
+</select>
+<input id = 'inputtwo' type = 'number'></input>
+<button type = 'button' onclick = 'Calculate();'> Calculate</button>
+<div style = 'color: black; font-size: 30px;' id = 'answer'></div>
+      </div>
+
+<div id = 'forloop'>
+  <h2> The For Loop </h2>
+<input id = 'letterinput' type = 'text'> </input>
+<button type = 'button' onclick = 'letterCalculate();'> For Calculate</button>
+<div style = 'color : black; font-size: 12px' id = 'letteranswer'> </div>
+
+</div>
+
+<div id = 'whileloop'>
+<h2> The While Loop </h2>
+<input id = 'letterinputwhile' type = 'text'></input>
+<button type = 'button' onclick = 'whileCalculate();'> While Calculate </button>
+<div id = 'whileanswer'> </div>
+</div>
+
+<div id = 'prompt'>
+<h2> The Try Catch Throw Finally </h2>
+<button type = 'button' onclick = 'errorPrompt();'> Error Prompt </button>
+<div style = 'display: inline-block; font-size: 20px; color: black;' id = 'promptresponse'>  </div>
+</div>
+</div>
+      <div style = "color: black; font-size: 30px;" id = 'modal-footer'>
+        <br> </br> Follow me on Instagram @jrobreal !
+      </div>
+
+</div>
+<section>
+  <p>Lorem ipsum dolor sit amet,
+    consectetur adipiscing elit.
+    Sed id diam at nisl pulvinar suscipit tristique quis dolor.
+    Sed ac molestie turpis, eu porttitor eros. </p>
+    <p>  Mauris tincidunt tincidunt dui quis posuere. Phasellus finibus massa quis lectus tempus lobortis.</p>
+    <p> Donec luctus, neque vitae convallis ultricies, nisl turpis semper sem, at congue elit neque eget libero.</p>
+    <p> Praesent placerat dui ut mi laoreet, eu dapibus eros interdum.
+      Integer mattis sed diam non imperdiet.</p>
+    <p> Sed dictum nibh ut ullamcorper scelerisque.
+      Integer feugiat risus non enim dapibus commodo. Donec turpis leo, mattis eget dui sed, consectetur lobortis nisl.  </p>
+</section>
+
+<div id ='tellyou'><span> Let me tell you this...
+<blockquote> You are <em> going </em> to die. The time to start grinding is <em> now</em>. </blockquote>
+</span>
+</div>
+
+<footer>
+<div id ='top-row'>
+  <div id = 'left'> Left Column </div>
+  <div id = 'middle'> Middle Column </div>
+  <div id = 'right'> Right Column </div>
+</div>
+<div id = 'bottom-row'>
+This text should be the width of all the columns
+ </div>
+</footer>
+</div>
+
+</body>
+</html>

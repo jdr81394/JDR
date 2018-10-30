@@ -1,0 +1,12 @@
+.text {
+  color: blue;
+  transition-property: color, font-size;
+  transition-timing-function:linear;
+  transition-duration: 3.0s;
+  font-size: 30px;
+}
+
+.text:hover {
+  color: red;
+  font-size: 100px;
+}

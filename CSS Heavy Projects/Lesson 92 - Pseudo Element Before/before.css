@@ -1,0 +1,20 @@
+.square {
+float: right;
+width: 200px;
+height: 200px;
+background-color: #fff;
+border: 1px solid #ccc;
+position: relative;
+
+}
+
+.square:hover::before {
+  display: inline-block;
+  content: '';
+  background-color: black;
+  position: absolute;
+  left: -200px;
+  top: 0;
+  width: 200px;
+  height: 200px;
+}

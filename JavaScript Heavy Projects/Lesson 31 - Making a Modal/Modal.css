@@ -1,0 +1,36 @@
+.modal {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #000;
+  width: 50%;
+  display: none;
+}
+.modal-title {
+  font-size: 19px;
+  border-bottom: 1px solid #ccc;
+}
+
+.modal-content {
+  padding: 20px;
+}
+.modal-footer {
+  font-size: 20px
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+}
+
+.button {
+  font-size: 30px;
+border-radius: 10px;
+background-size: 10px;
+top: 10%;
+left: 15%;
+}
+
+div {
+  font-size: 120px;
+}

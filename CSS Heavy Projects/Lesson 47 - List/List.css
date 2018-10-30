@@ -1,0 +1,8 @@
+ol li {
+  list-style-type: lower-roman;
+  list-style-position: inside;
+  border: 1px solid #ccc;
+  width: 25%;
+  padding: 5% 0 0 3%;
+
+}

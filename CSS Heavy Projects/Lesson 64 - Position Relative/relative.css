@@ -1,0 +1,13 @@
+nav {
+  border-bottom: 1px solid black;
+  background-color: #eff;
+}
+
+.pos {
+  position: relative;
+  top: 100px;
+  left: 200px;
+  text-align: center;
+  padding: auto;
+  margin: 0;
+}

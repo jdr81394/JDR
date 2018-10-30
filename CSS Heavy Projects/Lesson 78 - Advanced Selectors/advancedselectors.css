@@ -1,0 +1,47 @@
+form {
+  border: 1px solid black;
+  height: 25%;
+  width: 50%;
+
+}
+
+label, button {
+display: block;
+margin: 5 0 5 10;
+
+}
+
+button:hover{
+  font-weight: 700;
+  background-color: green;
+}
+input[type] {
+  border: 1px solid purple;
+}
+
+
+.fa-question[title~= "question"]{
+  border-color: pink;
+}
+
+.fa-question[title~="question"]:hover{
+font-weight: 700;
+color: red;
+background-color: #cce;
+
+}
+
+[href^="https"] {
+  height: 100px;
+  width: 100px;
+  border-color: red;
+  color: black;
+}
+
+
+
+[href$= "com/"]:hover{
+  font-weight: 700;
+
+
+}

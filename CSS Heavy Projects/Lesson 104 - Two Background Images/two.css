@@ -1,0 +1,13 @@
+#tiger {
+  height: 250px;
+  width: 250px;
+  border-radius: 100px;
+  border: 10px solid red;
+  background-color: green;
+  background-repeat: repeat-x, no-repeat;
+  background-size: 100px 100px, 200px 200px;
+  background-image: url(wolf.jpeg), url(tiger.jpeg);
+  background-position: left bottom, center center;
+  border-radius: 300px, 600px;
+
+}

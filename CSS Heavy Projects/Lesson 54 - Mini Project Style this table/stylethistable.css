@@ -1,0 +1,24 @@
+thead th {
+  border-bottom: 1px solid black;
+  background-color: #eee;
+}
+table {
+  border: 1px solid black;
+}
+tfoot th {
+  border-top: 1px solid black;
+  background-color: #eee;
+}
+tbody {
+  border-collapse: collapse;
+  text-align: center;
+}
+
+tbody td:hover {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+tbody tr:hover td:hover{
+  background-color: #eee;
+}

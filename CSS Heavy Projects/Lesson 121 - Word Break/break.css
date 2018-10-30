@@ -1,0 +1,19 @@
+.box {
+  border: solid 1px black;
+  width: 200px;
+  height: 65px;
+  margin: 100px 0;
+
+}
+
+.ellipsis {
+  word-break:break-all;
+
+  text-overflow: ellipsis;
+}
+
+.clip {
+
+
+  text-overflow:clip;
+}

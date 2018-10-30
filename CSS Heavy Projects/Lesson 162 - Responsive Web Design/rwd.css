@@ -1,0 +1,42 @@
+#test {
+
+  background-color: blue;
+  font-size: 20px;
+  color: red;
+}
+
+@media(max-width: 1000px) {
+  #test {
+    background-color: yellow;
+  }
+}
+
+
+@media print {
+  #test {
+    background-color: pink;
+    font-size: 300px;
+    color: red;
+  }
+}
+
+@media(min-width: 400px) and (max-width: 700px)
+{
+  #test {
+    background-color: green;
+  }
+}
+img {
+  width: 100%;
+  height: auto;
+}
+
+.video-container {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container-16x9 {
+  padding-bottom: 56.25%;
+}

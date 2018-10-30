@@ -1,0 +1,29 @@
+#boxOne, #boxTwo, #boxThree {
+  height: 200px;
+  width: 200px;
+  display: inline-block;
+  background-color: red;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  transition: 1 s ease-in;
+
+}
+
+#boxOne:hover + #boxTwo  {
+position: relative;
+top: 400px;
+
+transform: translateZ(100);
+transform: skewX(1000000000000000000000000000000000000000000deg);
+transform: rotateY(1000);
+}
+
+#boxTwo:hover + #boxThree {
+  position: relative;
+  top: 400px;
+  transform: scale(2);
+  transform:rotateX(1000deg);
+
+  transform: skewY(1000deg)
+}

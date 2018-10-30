@@ -1,0 +1,38 @@
+#card-container {
+  height: 400px;
+  width: 300px;
+  border: 1px solid black;
+  display: inline-block;
+  margin: 10px 5px;
+  padding: 10px 0px 10px 0px;
+  background: linear-gradient(to right, rgb(125,125,150), rgb(200,200,200));
+}
+
+#card-img {
+display: inline-block;
+height: 200px;
+width: 300px;
+background-image: url("Jordan peterson.jpg");
+padding: 0px;
+background-size: contain;
+
+
+}
+
+#card-title {
+  font-size: 24px;
+  color: rgb(0,0,0);
+  text-shadow: -2px -2px 2px red;
+  margin: 5px 0;
+  height: 30px;
+  border-bottom-color: black;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  text-indent: 10px;
+}
+
+#card-content {
+  margin: 10px 0 0 0;
+  padding: 10px;
+
+}

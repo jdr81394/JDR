@@ -1,0 +1,13 @@
+nav {
+  border-bottom-color: black;
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+}
+
+div, p, span {
+  font-family: helvetica;
+}
+
+div span{
+  color: red;
+}

@@ -1,0 +1,38 @@
+.flexbox-parent {
+display: flex;
+/* flex-direction: row;
+ align-items: center;
+justify-content: center; */
+background-color: blue;
+height: 500px;
+
+flex-direction: row;
+
+/*align-items: center;
+justify-content: center; */
+align-items:stretch;
+
+}
+
+.flex {
+flex-basis: 20%;
+display: flex;
+
+/* doesnt work align-self: center; because using
+align-self below*/
+align-items: center;
+justify-content: center;
+/* justify-content: center;
+text-align: center; */
+background: #8c1515;
+color: #fff;
+border: 1px solid white;
+height: 150px;
+}
+
+.flexbox1 {
+align-self: baseline;}
+.flexbox2 {
+align-self: center;}
+.flexbox3 {
+align-self: flex-end;}

@@ -1,0 +1,12 @@
+@font-face {
+  font-family: myFont;
+  src: url('fonts/Shrikhand-Regular.ttf');
+}
+
+div {
+  font-size: 20px;
+  text-align-last: right;
+  font-family: myFont
+
+
+}

@@ -1,0 +1,19 @@
+.link {
+text-decoration: none;
+color: red;
+font-size: 30px;
+
+}
+
+.link:hover {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.link:visited {
+  color: blue;
+}
+
+.link:active {
+  color: pink;
+}

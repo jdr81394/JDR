@@ -1,0 +1,15 @@
+p.child:first-child {
+  color: red;
+}
+p.child:nth-child(2){
+  color: blue;
+}
+
+p.child:nth-child(3)  {
+  color: pink;
+}
+
+p {
+  font-weight: 700;
+  text-align: center;
+}

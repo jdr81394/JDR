@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+}
+
+.box {
+height: 5%;
+width: 5%;
+background-color: #eef;
+border: 1px solid blue;
+position: relative;
+
+
+animation-name: boxAnimation;
+
+animation-timing-function: ease;
+}
+
+@keyframes boxAnimation {
+ 0% {
+top: 0;
+left: 0;
+
+ }
+
+25% {
+  top: 95%;
+  left: 0%;
+  transform:rotateY(90deg)
+  rotateX(90deg) skewX(15deg);
+  background-color: yellow;
+}
+
+50% {
+  top: 95%;
+  left: 95%;
+  transform:rotateY(180deg)
+  rotateX(180deg);
+  background-color: red;
+}
+
+75% {
+  top: 0%;
+  left: 95%;
+  transform:rotateY(270deg)
+  rotateX(270deg);
+background-color: orange;
+}
+
+100% {
+  top: 0%;
+  left: 0%;
+  transform:rotateY(360deg)
+  rotateX(360deg);
+  background-color: purple;
+}
+}
+
+.time-4 {
+  animation-duration: 4s;
+}
+
+.iteration-3 {
+  animation-iteration-count: 3;}

@@ -1,0 +1,23 @@
+#box {
+  height: 400px;
+  width: 400px;
+  background-color: red;
+  border: 1px solid blue;
+  display: inline-block;
+  position:relative;
+  top: 300px;
+  left: 100px;
+
+  transition: 1000ms all linear;
+
+}
+
+
+
+#box:hover > #text {
+  content: 'Hi';
+  font-size: 300px;
+  color: black;
+  transform: rotateX(360deg);
+
+}

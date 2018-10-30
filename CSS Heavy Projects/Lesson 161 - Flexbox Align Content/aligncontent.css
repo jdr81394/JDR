@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.flexbox-parent {
+  display: flex;
+
+  height: 500px;
+  background-color: #eef;
+  border: 1px solid black;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  align-content: space-around;
+
+
+
+}
+
+.flex {
+  border: 1px solid red;
+  flex-shrink: 0;
+  flex-basis: 26%;
+  background-color: yellow;
+
+
+  height: 50px;
+
+}
+/*
+.flexbox-parent {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  background-color: blue;
+  height: 500px;
+}
+
+.flex {
+  flex-basis: 26%;
+  flex-shrink: 0;
+
+  background-color: #8c1515;
+  color: #fff;
+  border: 1px solid white;
+  height: 50px; */

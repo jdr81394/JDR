@@ -1,0 +1,42 @@
+<html>
+<head>
+</head>
+<body>
+
+
+<div class="test">
+
+</div>
+
+
+<script>
+
+var text = document.querySelector(".test");
+
+try{
+  var name = prompt("please sign in");
+  if (name != 'Jake'){
+    throw "Unknown User";
+  } else {
+  text.innerHTML = name;
+
+
+  }
+}
+catch(e){
+  if (e == 'Unknown User'){
+  }
+  text.innerHTML = "get out";
+
+}
+
+finally {
+  text.innerHTML += "<br></br> Try catch was run";
+}
+
+
+</script>
+</body>
+
+
+</html>

@@ -1,0 +1,26 @@
+.parent-flex {
+  display: flex;
+  border: 1px solid red;
+  flex-direction: column;
+  height: 500px;
+  width: 100%;
+}
+
+.box {
+  border: 1px solid blue;
+}
+
+.column1 {
+  flex-basis: 33%;
+  order: 3;
+}
+
+.column2 {
+  flex-basis: 50%;
+  order: 1;
+}
+
+.column3 {
+  flex-basis: 60%;
+  order: 2
+}

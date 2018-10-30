@@ -1,0 +1,8 @@
+#shadow {
+  height: 350px;
+  width: 350px;
+  border-radius: 1000px;
+  background-color: yellow;
+  box-shadow: inset 0px 0px 175px red;
+  border: 10px solid blue;
+}

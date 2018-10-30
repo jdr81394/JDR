@@ -1,0 +1,24 @@
+.parent-container {
+  display: flex;
+  border: 1px solid red;
+  flex-direction: row;
+  height: 100px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.flex {
+  border: 1px solid blue;
+}
+
+.flex1 {
+  flex: 0 0 50%;
+}
+
+.flex2 {
+  flex: 1 1 25%;
+}
+
+.flex3 {
+  flex: 1 1 25%;
+}

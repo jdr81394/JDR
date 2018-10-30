@@ -1,0 +1,29 @@
+#boxOne {
+  height: 100px;
+  width: 1000px;
+  background-color: white;
+  border: 1px solid black;
+
+}
+
+#boxTwo {
+  height: 100px;
+  width: 100px;
+  background-color: silver;
+  border: 1px solid lightblue;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  transition-duration: 1.5s;
+  transition-property: left, top, background-color, width, height;
+  transition-timing-function: ease-in-out;
+}
+
+
+#boxOne:hover #boxTwo {
+left: 900px;
+top: 600px;
+height: 300px;
+width: 300px;
+background-color: red;
+}
