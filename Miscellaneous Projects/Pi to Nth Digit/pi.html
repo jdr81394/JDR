@@ -1,0 +1,30 @@
+<html>
+
+<head>
+
+
+</head>
+<body>
+<form>
+<input type="number" class = 'exponent'></input>
+<button type="button" class = 'button' onclick="Calculate()"> Calculate</button>
+</form>
+<h2> Answer here </h2>
+<div class = 'answer'></div>
+<script>
+
+
+function Calculate(){
+  var exponent = Number(document.querySelector('.exponent').value);
+  var answer = document.querySelector('.answer');
+  var x = Math.PI;
+
+  answer.innerHTML = x.toFixed(exponent);
+
+
+}
+
+</script>
+</body>
+
+</html>

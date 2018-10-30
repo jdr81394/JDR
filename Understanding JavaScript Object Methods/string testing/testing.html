@@ -1,0 +1,181 @@
+<html>
+<head>
+</head>
+<body>
+<div class="anchor">
+
+</div>
+  <script>
+
+var sentence = "hello world";
+// String  Properties
+console.log(sentence.constructor);
+console.log(sentence.length);
+console.log(sentence.prototype); //I dont understand this one.
+
+//String Methods
+
+//charAt
+
+console.log(sentence.charAt(0));
+
+//charCodeAt()
+console.log(sentence.charCodeAt(1));
+
+//concat
+var sentence2 = " I am Jake.";
+var sentence3 = ' I am learning to code';
+console.log(sentence.concat(sentence2, sentence3));
+
+//endsWith()
+console.log(sentence.endsWith('d'));
+console.log(sentence.endsWith('a'));
+
+//fromCharCode()
+//console.log(sentence.fromCharCode(65)); // Can't figure this out
+
+//includes()
+console.log(sentence.includes('hello'));
+
+//indexOf()
+
+console.log(sentence.indexOf('o')); //if doesnt exist, returns -1
+
+//lastIndexOf()
+
+console.log(sentence.lastIndexOf('o'));
+
+//localeCompare()
+//compares 2 strings in current locale, method returns whether
+//string comes before, after or is equal.
+
+console.log(sentence.localeCompare(sentence2));
+console.log(sentence2.localeCompare(sentence));
+
+//match()
+
+console.log(sentence.match(/ello/));
+console.log(sentence.match(/ello/g)); //method returns 'null' if no matches found
+// expression must contain g to perform a global search
+// if there is no g contained, it will return the first match in the string
+
+
+
+//repeat() - returns a new string with copies of an existing string
+
+console.log(sentence.repeat(5));
+
+//replace()
+
+console.log(sentence.replace("hello","Goodbye"));
+
+
+//search()
+
+console.log(sentence.search("world")); //if doesnt exist returns -1;
+
+//slice() - cuts out any characters that are not in between the 2 numbers
+//uses numbers to determine the characters
+
+console.log(sentence.slice(1, 9));
+
+//split() - makes array and seperates by what is in ()
+console.log(sentence.split(' '));
+
+//startsWith()
+
+console.log(sentence.startsWith('h')); // returns boolean true-false
+
+
+//substr() - look at the difference between the 2
+//Extracts the characters from a string,
+//beginning at a specified start position,
+//and through the specified number of character
+console.log(sentence.substr(1,1));
+console.log(sentence.slice(2,3)); // not so sure i understand difference
+
+
+
+//substring() - extracts characters between 2 specified positions
+console.log(sentence.substring(0,2));
+
+
+//toLocaleLowerCase()
+//toLocaleUpperCase()
+//toLowerCase()
+//toUpperCase()
+
+console.log(sentence.toLocaleLowerCase());
+console.log(sentence.toLocaleUpperCase());
+console.log(sentence.toLowerCase());
+console.log(sentence.toUpperCase());
+
+//toString() - dont really see the purpose of this but ok
+
+console.log(sentence.toString());
+
+
+//trim() - removes whitespace from ends of strings
+
+var sentence4 = " Too much space "
+console.log(sentence4);
+console.log(sentence4[0]);
+var sentence5 = sentence4.trim();
+console.log(sentence5[0]);
+
+//valueOf() returns primitive value of a string object
+//start with a number primitive data type, convert to string.
+var number2 = 5;
+console.log(number2.constructor);
+var number2ToString = number2.toString();
+console.log(number2ToString.constructor);
+
+console.log(number2ToString.valueOf()); // I dont see how this is difference than console logging it.
+
+// STRING HTML WRAPPER METHODS BELOW
+// THE HTML WRAPPER METHODS RETURN THE STRING WRAPPED INSIDE THE APPROPROIATE HTML TAG
+// THESE ARE NOT STANDARD METHODS, MAY NOT WORK AS EXPECTED IN ALL BROWSWERS
+//
+//
+
+
+//anchor() - creates an anchor... <a element?
+
+var anchorTxt = "This is an anchor text"
+var anchorTxtMethod = anchorTxt.anchor();
+console.log(anchorTxtMethod);
+
+// big()
+var bigText = 'yo yo this is suppose to be big'
+console.log(bigText.big()); //not supported in html, use CSS instead.
+//returns a string wrapped in <big> </big>
+
+//blink()
+var blink = 'this needs to blink'
+console.log(blink.blink());
+
+//bold()
+
+var strstr = 'this is the text i am using going forward';
+console.log(strstr.bold());
+
+//fixed()
+console.log(strstr.fixed());
+
+//foontcolor
+
+var anchor = document.querySelector('.anchor');
+anchor.innerHTML =
+ strstr.fontcolor('blue')
+ .fontsize(30)
+ .italics()
+ .link()
+ .strike();
+
+
+
+
+
+  </script>
+</body>
+</html>

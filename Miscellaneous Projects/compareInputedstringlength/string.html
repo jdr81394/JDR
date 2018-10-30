@@ -1,0 +1,57 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+<div>
+  <h2> Which sentence is longer?</h2>
+<form>
+<input id = 'input1' value = '' type = string></input>
+
+
+<input id = 'input2' value = '' type = string></input>
+
+<button type = 'button' onclick = 'Calculate()'> Calculate </button>
+</form>
+
+<div id = 'answer'> </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src = 'string.js'></script>
+<script>
+var hello = "hello world";
+// length property
+if (hello.length - 8 < 5){
+  console.log("first function");
+} else {
+  console.log("second function");
+}
+//length + charAt & charCodeAt
+for (var i = 0; i < hello.length; i++)
+{
+  if (hello[i].charAt(0) == "h"){
+    console.log("This is an h, the uncode value is " + hello.charCodeAt()) ;
+  }
+  else {console.log(hello[i]);
+}
+}
+</script>
+
+</body>
+
+</html>
