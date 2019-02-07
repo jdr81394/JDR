@@ -21,7 +21,6 @@ console.log(process.env.DATABASEURL);
 var url = process.env.DATABASEURL || 'mongodb://localhost/yelp_camp_v14'
 mongoose.connect(url);
 // seedDB(); //seed the database
-// mongoose.connect("mongodb://Jake:Bbknights1!@ds113845.mlab.com:13845/yelpcamp1", { useNewUrlParser: true })
 mongoose.connect("mongodb://localhost/yelp_camp_v14", { useNewUrlParser: true })
 
 app.use(bodyParser.urlencoded({extended:true}));
