@@ -1,0 +1,11 @@
+.profile-pic {
+border-radius:1000px;
+background-position: center;
+height: 300px;
+width: 300px;
+background-image: url(profile.jpeg);
+background-size: 100%;
+background-repeat: no-repeat;
+background-position: left top;
+
+}
