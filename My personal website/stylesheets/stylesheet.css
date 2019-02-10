@@ -1,6 +1,14 @@
+.container {
+  height: 100%;
+}
+
+.row {
+  width: 100%;
+}
+
+
 .profile-pic {
-border-radius:1000px;
-background-position: center;
+
 height: 300px;
 width: 300px;
 background-image: url(profile.jpeg);
