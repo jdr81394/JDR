@@ -1,0 +1,156 @@
+
+body {
+  width: 100%;
+  animation-name: comeIn;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes comeIn {
+0% {
+opacity: 0;
+}
+
+100% {
+  opacity:1;
+}
+}
+
+.main {
+  width: 100%;
+}
+
+.row {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  margin: 0px;
+
+}
+
+nav {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  width: 100%;
+  transition-property: background-color;
+  transition-timing-function: linear;
+  transition-duration: .5s;
+}
+
+ul li a {
+color: #717171;
+transition-property: font-weight;
+transition-timing-function: linear;
+transition-duration: .5s;
+}
+
+ul li a:hover {
+color: #2d2d2d;
+font-weight: 900;
+
+}
+
+.right {
+height: 100%;
+background-color: #f7f7f7;
+animation-name: slideInRight;
+
+animation-duration: 3s;
+animation-fill-mode: forwards;
+}
+
+@keyframes slideInRight {
+0% {
+  opacity: 0;
+  bottom: 95%;
+}
+
+100% {
+  opacity: 1;
+  bottom: 0%;
+}
+
+}
+
+
+
+/* @media(min-width:768px){
+  .right {
+    background-color: #f7f7f7;
+  }
+} */
+
+.profile-pic {
+height: 300px;
+width: 300px;
+background-image: url(profile.jpeg);
+background-size: 100%;
+background-repeat: no-repeat;
+background-position: left top;
+
+}
+
+.left {
+  animation-name: slideInLeft;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideInLeft {
+0% {
+  opacity: 0;
+  top: 100%;
+}
+
+100% {
+opacity: 1;
+top: 0;
+}
+}
+
+.middle {
+  animation-name: middleFadeIn;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes middleFadeIn {
+0% {
+  opacity: 0;
+}
+
+100%{
+opacity: 1;
+}
+}
+
+.work-btn {
+  animation-name: buttonFadeIn;
+  animation-delay: 0s;
+  animation-duration: 7s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes buttonFadeIn {
+  0%{
+opacity: 0;
+  }
+
+  50%{
+
+  }
+
+  100% {
+opacity: 1;
+
+
+  }
+
+}
