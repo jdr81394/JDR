@@ -1,0 +1,23 @@
+<html lang = 'en'>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"></link>
+</head>
+<body>
+<h1 class = '' style = 'color:red'> hi </h1>
+
+<div>
+<% blogs.forEach(function(blog) { %>
+<%=blog.title %>
+
+
+
+<% })%>
+
+</div>
+
+<a class = 'btn btn-success btn-lg' href = '/blog/new'>Add a blog post</a>
+
+</body>
+</html>
