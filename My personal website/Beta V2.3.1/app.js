@@ -33,6 +33,10 @@ app.get('/RGB', function(req,res){
   res.render('rgbGame');
 })
 
+app.get('/patatap', function(req,res){
+  res.render('circles')
+})
+
 
 app.listen(3000, function(){
     console.log("Your personal website has started")

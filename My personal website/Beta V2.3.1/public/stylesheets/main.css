@@ -96,7 +96,15 @@ border-radius: 3000px;
 
 
 
-.middle {
+.banner{
+  background-image:url('abc.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+}
+
+/* .middle {
   background-image: url('test image 2.jpg');
   background-repeat: no-repeat;
   background-position: center center;
@@ -104,7 +112,7 @@ border-radius: 3000px;
   animation-name: middleFadeIn;
   animation-duration: 3s;
   animation-fill-mode: forwards;
-}
+} */
 
 @keyframes middleFadeIn {
 0% {
@@ -121,15 +129,16 @@ opacity: 1;
 
 .about  {
   border-top: 2px solid #e5e5e5;
-  background-color: #fff;
+
  /* background-image: url(empty-electric-light-bulb.jpg);
   background-repeat: no-repeat;
   background-size: cover; */
 }
 
-.skill-section{
-  background-color: #e5e5e5;
-  border-radius: 25px;
+.grey{
+  background-color: #fff;
+  /* background-color: rgb(248,248,248); */
+  /* border-radius: 25px; */
 }
 @keyframes fade-in {
     from {opacity: 0; transform: scale(.7,.7)}
@@ -156,9 +165,9 @@ transition-duration: .5s;
 transition-timing-function: linear;
 }
 
-.front-end .whole-tech .tech-name:hover, .back-end .whole-tech .tech-name:hover, .other-tech .whole-tech .tech-name:hover{
+/* .front-end .whole-tech .tech-name:hover, .back-end .whole-tech .tech-name:hover, .other-tech .whole-tech .tech-name:hover{
 font-weight: 900;
-}
+} */
 
 /* .project-col {
   flex: 0 0 33%:
@@ -173,7 +182,7 @@ font-weight: 900;
 } */
 
 .work-container {
-  margin: 0 autor;
+  margin: 0 auto;
   padding: 0;
   width: 100%;
 
