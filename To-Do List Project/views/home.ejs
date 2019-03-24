@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href = '/style.css' rel = 'stylesheet'></link>
+  </head>
+  <body>
+<h1> Team-Mates & Projects </h1>
+    <div class = 'container flex-row d-flex'>
+      <table class = 'table'>
+        <!--  Access all teammates in database, for each teammate load up data-->
+              <% teammates.forEach(function(teammate){ %>
+                  <tr>
+                    <th scope = 'col'> <a href = '/team-mate/<%= teammate._id %>'><%= teammate.name %></a></th>
+                  </tr>
+            <%  }) %>
+        </table>
+        <!--  Access all projects in database, for each project load up data-->
+        <table class = 'table'>
+          <% projects.forEach(function(project){ %>
+              <tr>
+                <th scope = 'col'><a href = '/project/<%=project._id %>' ><%= project.name %> </a></th>
+              </tr>
+        <%  }) %>
+        </table>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href = '/style.css' rel = 'stylesheet'></link>
+  </head>
+  <body>
+    <!--  Load up the specific teammate's name -->
+    <h1> <%=teammate.name%>'s Projects</h1> <a id='returnHome' href = '/'><i class="fas fa-home"></i> </a>
+    <table class = 'table'>
+      <thead>
+        <tr>
+          <th scope = 'col'> Projects </th>
+          <th scope = 'col'> Members </th>
+          <th scope = 'col'> Estimated Hours </th>
+          <th scope = 'col'> Actions </th>
+          </tr>
+          <!-- For each project inside the specific teammate's project array -->
+            <% teammate.projects.forEach(function(userProject){ %>
+              <!-- For each project in the database-->
+              <% for(proj of project){ %>
+                  <tbody>
+                    <!-- If the id of the project in the teammate's project array matches the project in the database's id. -->
+                  <% if(String(userProject._id) == String(proj._id)) {%>
+                    <!-- Print the name -->
+                    <th scope = 'row'><%= proj.name %> </th>
+                    <!-- Print as many assignedNames as there is indices in the database project's array -->
+                    <td> <%  for(i=0; i < proj.members.length; i++)  { %>
+                      <a href = '/team-mate/<%=proj.members[i]._id%>'> <%= proj.assignedName[i] %> </a>
+                    <% } %></td>
+                    <!--  Print hours-->
+                    <td> <%= proj.hours %></td>
+                    <!--  Produce project id for link-->
+                    <td><a style = 'btn btn-success' href = '/project/<%=proj._id%>'>View </a> </td>
+<%}}}) %>
+            </tbody>
+
+      </table>
+
+
+
+  </body>
+  </html>

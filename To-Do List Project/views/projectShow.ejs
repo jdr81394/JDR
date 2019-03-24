@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href = '/style.css' rel = 'stylesheet'></link>
+  </head>
+  <body>
+    <!--  Load up project specific name in the Header-->
+    <h1> <%=project.name%></h1> <a id='returnHome' href = '/'> <i class="fas fa-home"></i>   </a>
+    <table class = 'table'>
+      <thead>
+        <tr>
+          <th scope = 'col'> Projects </th>
+          <th scope = 'col'> Assigned To </th>
+          <th scope = 'col'> Estimated Hours </th>
+          </tr>
+          <!--  Going through each task in specific project-->
+          <% project.tasks.forEach(function(task){ %>
+          <tbody>
+            <th scope= 'row'>  <%= task.name %> </th>
+            <!-- For each project task in project, go through each
+            task in Task DB  to see if id matches. If taskIndex Id matches, put assigned -->
+            <td>
+              <a href = '/team-mate/<%=task.assigned%>'><%= task.assignedName %></a>
+            </td>
+            <!--  Print hours -->
+            <td> <%= task.hours %></td>
+
+          <%  }) %>
+          </tbody>
+        </table>
+
+
+
+
+</body>
+</html>
